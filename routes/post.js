@@ -11,7 +11,6 @@ router.get('/', async (req, res) => {
     }
 });
 
-
 router.get('/:id', async (req, res) => {
     try {
         const post = await Post.findById(req.params.id);
@@ -46,7 +45,7 @@ router.patch('/:id', async (req, res) => {
     }
 });
 
-module.exports = router;// Export the router
+module.exports = router;// Export the rout
 
 router.delete('/:id', async (req, res) => {
     try {
