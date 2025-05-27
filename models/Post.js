@@ -1,10 +1,14 @@
 const mongoose  = require('mongoose');
 const PostSchema = new mongoose.Schema({
-    title: {
+    product: {
         type: String,
         required: true
     },
-    description: {
+    quantity: {
+        type: String,
+        required: true
+    },
+    price: {
         type: String,
         required: true
     },
